@@ -1,14 +1,14 @@
 # MuJoCo物理
 
-**MuJoCo**代表**穆**lti-**乔**与诠释动力**有限公司**ntact。它是一种通用物理引擎，旨在促进机器人、生物力学、图形和动画、机器学习以及其他需要快速准确模拟与其环境相互作用的关节结构的领域的研究和开发。
+**MuJoCo**代表多连接点接触动力学。它是一种通用物理引擎，旨在促进机器人、生物力学、图形和动画、机器学习以及其他需要快速准确模拟与其环境相互作用的关节结构的领域的研究和开发。
 
 DeepMind 已经收购了 MuJoCo，我们目前正在准备开源代码库。与此同时，MuJoCo 可作为免费且不受限制的预编译二进制文件在[mujoco.org](https://mujoco.org/)的 Apache 2.0 许可下 [下载](https://mujoco.org/)。
 
-MuJoCo 的源代码将在准备就绪后通过此 GitHub 存储库发布。同时，存储库托管 MuJoCo 的文档、其公共 API 的 C 头文件和示例程序代码。如果您想报告错误或提出功能请求，请将它们归档为[GitHub 问题](https://github.com/deepmind/mujoco/issues)。也欢迎您对[文档源文件](https://github.com/deepmind/mujoco/tree/main/doc)提出拉取请求。
+MuJoCo 的源代码将在准备就绪后通过此 GitHub 存储库发布。同时，存储库托管 MuJoCo 的文档、其公共 API 的 C 头文件和示例程序代码。如果您想报告错误或提出功能请求，请将它们归档为[GitHub 问题](https://github.com/deepmind/mujoco/issues)。也欢迎您对[文档源文件](https://github.com/deepmind/mujoco/tree/main/doc)提出 pull 请求。
 
 ## [](https://github.com/tigerneil/mujoco#overview)概述
 
-MuJoCo 是一个带有 C API 的 C/C++ 库，供研究人员和开发人员使用。运行时模拟模块经过调整以最大限度地提高性能，并在由内置 XML 解析器和编译器预先分配的低级数据结构上运行。用户使用原生 MJCF 场景描述语言定义模型——一种 XML 文件格式，旨在尽可能让人类可读和可编辑。也可以加载 URDF 模型文件。该库包括具有原生 GUI 的交互式可视化，在 OpenGL 中呈现。MuJoCo 进一步公开了大量用于计算物理相关量的效用函数，不一定在模拟循环中。功能包括
+MuJoCo 是一个带有 C API 的 C/C++ 库，供研究人员和开发人员使用。运行时模拟模块经过调整以最大限度地提高性能，并在由内置 XML 解析器和编译器预先分配的低级数据结构上运行。用户使用原生 MJCF 场景描述语言定义模型——一种 XML 文件格式，旨在尽可能让人类可读和可编辑。也可以加载 URDF 模型文件。该库包括具有原生 GUI 的交互式可视化，在 OpenGL 中呈现。MuJoCo 进一步公开了大量用于计算物理相关量的效用函数，不仅仅限于模拟循环中。其特性包括：
 
 -   在广义坐标中模拟，避免关节违规。
     
